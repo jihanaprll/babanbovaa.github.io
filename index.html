@@ -1,88 +1,82 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Banova</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+  <title>Banova | Functional Food Innovation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Slide 1 : Hero -->
-  <section class="slide hero reveal">
-  <div class="hero-text">
-    <span class="label">Innovative Sustainable Snack</span>
+<div class="container">
+
+  <section class="slide hero">
     <h1>Banova</h1>
-    <p>
-      Snack bar inovatif berbasis limbah pisang yang mengubah
-      permasalahan food waste di Indonesia menjadi produk bernilai
-      ekonomi, bernutrisi, dan berkelanjutan.
-    </p>
-  </div>
+    <p class="subtitle">Functional Food from Banana Peel Waste</p>
+    <span class="scroll">Scroll to Explore ↓</span>
+  </section>
 
-  <div class="hero-image">
-    <img src="assets/images/product.png" alt="Banova Snack Bar">
-  </div>
-</section>
+  <section class="slide">
+    <h2>Banana Waste Is a Hidden Crisis</h2>
+    <p>Kulit pisang merupakan limbah terbesar dari komoditas buah dan sering terbuang, padahal kaya serat dan senyawa bioaktif.</p>
+  </section>
 
+  <section class="slide">
+    <h2>Upcycling Waste into Functional Food</h2>
+    <button onclick="openModal()">Explore How Banova Works</button>
+  </section>
 
-  <!-- Slide 2 : Masalah -->
-  <section class="slide reveal">
-  <div class="content">
-    <h2>Problem</h2>
-    <p>
-      Indonesia merupakan salah satu penyumbang food waste terbesar
-      di dunia. Pisang menjadi komoditas dengan tingkat limbah tinggi
-      akibat produksi berlebih, kerusakan pascapanen, dan rendahnya
-      pemanfaatan limbah bernilai.
-    </p>
-  </div>
-</section>
+  <section class="slide">
+    <h2>Why Banova Matters</h2>
+    <div class="cards">
+      <div>🌍 Sustainable</div>
+      <div>🧠 Functional Nutrition</div>
+      <div>💰 Economic Value</div>
+      <div>🍽️ Accessible</div>
+    </div>
+  </section>
 
+  <section class="slide">
+    <h2>A Large Untapped Opportunity</h2>
+    <p>TAM – SAM – SOM</p>
+  </section>
 
-  <!-- Slide 3 : Solusi -->
- <section class="slide reveal">
-  <div class="content">
-    <h2>Our Solution</h2>
-    <p>
-      Banova mengolah limbah pisang menjadi snack bar berkualitas
-      melalui proses pengolahan terstandar sehingga menghasilkan
-      produk yang aman, lezat, dan kaya nutrisi.
-    </p>
-  </div>
-</section>
+  <section class="slide">
+    <h2>Who Is Banova For?</h2>
+    <p>Urban consumers, eco-conscious society, UMKM pangan</p>
+  </section>
 
+  <section class="slide">
+    <h2>How Banova Grows</h2>
+    <p>B2C • B2B • Community Partnership</p>
+  </section>
 
-  <!-- Slide 4 : Keunggulan -->
-  <section class="slide reveal">
-  <div class="content">
-    <h2>Why Banova?</h2>
-    <ul class="features">
-      <li>Sustainable Product</li>
-      <li>High Nutritional Value</li>
-      <li>Reducing Food Waste</li>
+  <section class="slide dark">
+    <h2>Beyond Profit</h2>
+    <p>Reducing waste, empowering communities, improving health.</p>
+  </section>
+
+  <section class="slide hero">
+    <h2>From Waste to Wellness</h2>
+    <button>Let’s Build the Future</button>
+  </section>
+
+</div>
+
+<!-- MODAL -->
+<div id="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <h3>How Banova Transforms Banana Peels</h3>
+    <ul>
+      <li>♻️ Collection</li>
+      <li>🧪 Processing</li>
+      <li>🥣 Functional Product</li>
+      <li>🌱 Circular Impact</li>
     </ul>
   </div>
-</section>
+</div>
 
-
-  <!-- Slide 5 : Closing -->
- <section class="slide closing reveal">
-  <div class="content">
-    <h2>Creating Real Impact</h2>
-    <p class="closing-text">
-      Banova hadir untuk menciptakan dampak lingkungan, sosial,
-      dan ekonomi melalui inovasi pangan berkelanjutan.
-    </p>
-    <span class="tagline">Banova — From Waste to Worth.</span>
-  </div>
-</section>
-
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
