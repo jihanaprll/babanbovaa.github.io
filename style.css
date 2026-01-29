@@ -42,6 +42,8 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 5rem;
   margin-bottom: 1.5rem;
+.hero-text h1 {
+  font-size: 5.5rem;
 }
 
 .hero-text p {
@@ -52,6 +54,9 @@ body {
 .hero-image img {
   max-width: 420px;
   width: 100%;
+.hero-image img {
+  border-radius: 24px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15);
 }
 
 /* Content Section */
@@ -122,3 +127,22 @@ body {
     flex-direction: column;
   }
 }
+.label {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green-dark);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
