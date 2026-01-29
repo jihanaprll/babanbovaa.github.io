@@ -1,0 +1,8 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.delay { transition-delay: .2s }
+.delay2 { transition-delay: .4s }
+.delay3 { transition-delay: .6s }
