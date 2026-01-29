@@ -1,49 +1,82 @@
 :root {
-  --beige: #F3EAD9;
-  --green-dark: #162E22;
-  --white: #F5F5F2;
-body {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  background: var(--white);
-  color: var(--green);
-  scroll-behavior: smooth;
+  --bw: #F5F5F2;          /* broken white */
+  --dark: #0F2A1D;       /* dark green */
+  --accent: #C2A24F;     /* muted gold */
 }
 
-.container {
-  scroll-snap-type: y mandatory;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: var(--bw);
+  color: var(--dark);
+  overflow: hidden;
+}
+
+#scroll-container {
   height: 100vh;
   overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
-.slide {
+.section {
   height: 100vh;
   scroll-snap-align: start;
-  padding: 80px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
 }
 
 .hero {
-  background: var(--green);
-  color: var(--white);
+  background: url('assets/images/hero.jpg') center/cover no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15,42,29,.6);
+}
+
+.content {
+  z-index: 2;
+  margin: auto;
+  text-align: center;
+  color: var(--bw);
+}
+
+.split .text {
+  width: 50%;
+  padding: 10%;
+}
+
+.split .image {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
 .dark {
-  background: var(--green);
-  color: var(--white);
+  background: var(--dark);
+  color: var(--bw);
 }
 
-button {
-  background: var(--gold);
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: transform .3s;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 2rem;
+  padding: 10%;
 }
 
-button:hover {
-  transform: scale(1.05);
+.card {
+  background: rgba(255,255,255,.08);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
 }
